@@ -8,6 +8,20 @@ import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String s = reader.readLine();
+        int numberDay = Integer.parseInt(s);
+
+        switch (numberDay){
+            case 1 : System.out.println("понедельник"); break;
+            case 2 : System.out.println("вторник"); break;
+            case 3 : System.out.println("среда"); break;
+            case 4 : System.out.println("четверг"); break;
+            case 5 : System.out.println("пятница"); break;
+            case 6 : System.out.println("суббота"); break;
+            case 7 : System.out.println("воскресенье"); break;
+            default : System.out.println("такого дня недели не существует"); break;
+
+        }//напишите тут ваш код
     }
 }
