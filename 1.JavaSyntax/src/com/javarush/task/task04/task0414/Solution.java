@@ -8,6 +8,14 @@ import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String s = reader.readLine();
+        int year = Integer.parseInt(s);
+
+        if(year%4 != 0 || (year%100 == 0 && year%400 != 0)) {
+            System.out.println("количество дней в году: 365");
+        }
+        else
+            System.out.println("количество дней в году: 366");//напишите тут ваш код
     }
 }
