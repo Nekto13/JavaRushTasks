@@ -6,8 +6,25 @@ package com.javarush.task.task04.task0417;
 
 import java.io.*;
 
+
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String s = reader.readLine();
+        String s2 = reader.readLine();
+        String s3 = reader.readLine();
+
+        int number = Integer.parseInt(s);
+        int number2 = Integer.parseInt(s2);
+        int number3 = Integer.parseInt(s3);
+
+       if(number == number2 && number == number3)
+           System.out.println(number + " " + number2 + " " + number3);
+       else if(number == number2)
+           System.out.println(number + " " + number2);
+       else if(number2 == number3)
+           System.out.println(number2 + " " + number3);
+       else if(number == number3)
+           System.out.println(number + " " + number3);
     }
 }
